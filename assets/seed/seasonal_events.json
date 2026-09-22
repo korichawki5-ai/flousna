@@ -1,0 +1,231 @@
+{
+  "version": 1,
+  "note": {
+    "ar": "بذرة النظام الموسمي الهجري/الميلادي — تُستعمل في المرحلة 6 (المقارنة بين المواسم وتنبيهات الادخار). calendar=hijri يعتمد التقويم الهجري (±يوم حسب الرؤية)، وcalendar=gregorian تاريخ ثابت، وcalendar=manual يُحسب من بيانات المستخدم نفسه.",
+    "fr": "Bibliothèque du système saisonnier hégirien/grégorien — utilisée en Phase 6 (comparaison entre saisons et alertes d'épargne). calendar=hijri suit le calendrier musulman (±1 jour selon l'observation), gregorian une date fixe, manual se calcule depuis les données de l'utilisateur."
+  },
+  "impactScale": [
+    "low",
+    "medium",
+    "high",
+    "very_high"
+  ],
+  "events": [
+    {
+      "id": "ramadan",
+      "labels": {
+        "ar": "رمضان",
+        "fr": "Ramadan"
+      },
+      "calendar": "hijri",
+      "impact": "high",
+      "defaultBoostPercent": 40,
+      "relatedCategoryIds": [
+        "food",
+        "zakat_charity",
+        "gifts_events",
+        "cafe_drinks"
+      ],
+      "reminder": {
+        "ar": "يبدأ موسم رمضان: المصاريف ترتفع عادة. راجع سقف ميزانيتك قبل البداية.",
+        "fr": "Le mois de Ramadan commence : les dépenses augmentent généralement. Vérifiez votre plafond avant le début."
+      },
+      "month": 9,
+      "day": 1,
+      "durationDays": 30
+    },
+    {
+      "id": "eid_al_fitr",
+      "labels": {
+        "ar": "عيد الفطر",
+        "fr": "Aïd el-Fitr"
+      },
+      "calendar": "hijri",
+      "impact": "high",
+      "defaultBoostPercent": 30,
+      "relatedCategoryIds": [
+        "gifts_events",
+        "clothing",
+        "food"
+      ],
+      "reminder": {
+        "ar": "عيد الفطر: خصّص مبلغاً للهدايا والملابس قبل أسبوع حتى لا تضغط على ميزانيتك.",
+        "fr": "Aïd el-Fitr : prévoyez un montant pour les cadeaux et les vêtements une semaine à l'avance."
+      },
+      "month": 10,
+      "day": 1,
+      "durationDays": 3
+    },
+    {
+      "id": "eid_al_adha",
+      "labels": {
+        "ar": "عيد الأضحى",
+        "fr": "Aïd el-Adha"
+      },
+      "calendar": "hijri",
+      "impact": "very_high",
+      "defaultBoostPercent": 60,
+      "relatedCategoryIds": [
+        "food",
+        "gifts_events",
+        "family_aid"
+      ],
+      "reminder": {
+        "ar": "عيد الأضحى أكبر مصروف موسمي عند أغلب العائلات. ابدأ الادخار له من 3 أشهر.",
+        "fr": "L'Aïd el-Adha est la plus grosse dépense saisonnière. Commencez à épargner 3 mois avant."
+      },
+      "month": 12,
+      "day": 10,
+      "durationDays": 4
+    },
+    {
+      "id": "achoura",
+      "labels": {
+        "ar": "عاشوراء",
+        "fr": "Achoura"
+      },
+      "calendar": "hijri",
+      "impact": "low",
+      "defaultBoostPercent": 5,
+      "relatedCategoryIds": [
+        "zakat_charity",
+        "food"
+      ],
+      "reminder": {
+        "ar": "عاشوراء: كثير من العائلات تخصص مبلغاً للصدقة وإطعام الطعام.",
+        "fr": "Achoura : beaucoup de familles prévoient un montant pour l'aumône et les repas."
+      },
+      "month": 1,
+      "day": 10,
+      "durationDays": 1
+    },
+    {
+      "id": "mawlid",
+      "labels": {
+        "ar": "المولد النبوي",
+        "fr": "Mawlid"
+      },
+      "calendar": "hijri",
+      "impact": "medium",
+      "defaultBoostPercent": 15,
+      "relatedCategoryIds": [
+        "food",
+        "gifts_events",
+        "zakat_charity"
+      ],
+      "reminder": {
+        "ar": "المولد النبوي: مصاريف حلويات وموائد عائلية.",
+        "fr": "Mawlid : dépenses de pâtisseries et de repas familiaux."
+      },
+      "month": 3,
+      "day": 12,
+      "durationDays": 1
+    },
+    {
+      "id": "rentree_scolaire",
+      "labels": {
+        "ar": "الدخول المدرسي",
+        "fr": "Rentrée scolaire"
+      },
+      "calendar": "gregorian",
+      "impact": "high",
+      "defaultBoostPercent": 35,
+      "relatedCategoryIds": [
+        "education",
+        "clothing",
+        "transport"
+      ],
+      "reminder": {
+        "ar": "الدخول المدرسي: الأدوات والملابس والنقل. جهّز قائمة بالمصاريف المتوقعة.",
+        "fr": "Rentrée scolaire : fournitures, vêtements et transport. Préparez une liste des dépenses prévues."
+      },
+      "month": 9,
+      "day": 1,
+      "durationDays": 21
+    },
+    {
+      "id": "summer_holidays",
+      "labels": {
+        "ar": "العطلة الصيفية",
+        "fr": "Vacances d'été"
+      },
+      "calendar": "gregorian",
+      "impact": "medium",
+      "defaultBoostPercent": 25,
+      "relatedCategoryIds": [
+        "leisure_travel",
+        "food",
+        "cafe_drinks"
+      ],
+      "reminder": {
+        "ar": "الصيف: السفر والأعراس والمقاهي. حدّد مبلغاً أسبوعياً للترفيه.",
+        "fr": "Été : voyages, mariages et cafés. Fixez un montant hebdomadaire pour les loisirs."
+      },
+      "month": 6,
+      "day": 21,
+      "durationDays": 72
+    },
+    {
+      "id": "wedding_season",
+      "labels": {
+        "ar": "موسم الأعراس",
+        "fr": "Saison des mariages"
+      },
+      "calendar": "gregorian",
+      "impact": "high",
+      "defaultBoostPercent": 45,
+      "relatedCategoryIds": [
+        "gifts_events",
+        "clothing",
+        "leisure_travel"
+      ],
+      "reminder": {
+        "ar": "موسم الأعراس: الهدايا والتنقل تتكرر كل أسبوع. سجّلها في تصنيف واحد لتعرف مجموعها.",
+        "fr": "Saison des mariages : cadeaux et déplacements se répètent chaque semaine. Regroupez-les dans une catégorie."
+      },
+      "month": 6,
+      "day": 1,
+      "durationDays": 120
+    },
+    {
+      "id": "winter",
+      "labels": {
+        "ar": "فصل الشتاء",
+        "fr": "Saison d'hiver"
+      },
+      "calendar": "gregorian",
+      "impact": "medium",
+      "defaultBoostPercent": 20,
+      "relatedCategoryIds": [
+        "utilities",
+        "housing",
+        "maintenance",
+        "health"
+      ],
+      "reminder": {
+        "ar": "الشتاء: التدفئة والكهرباء والصحة. راجع سقف الخدمات قبل البرد.",
+        "fr": "Hiver : chauffage, électricité et santé. Vérifiez le plafond des services avant le froid."
+      },
+      "month": 12,
+      "day": 1,
+      "durationDays": 90
+    },
+    {
+      "id": "zakat_hawl",
+      "labels": {
+        "ar": "حول الزكاة",
+        "fr": "Année de la zakat (hawl)"
+      },
+      "calendar": "manual",
+      "impact": "high",
+      "defaultBoostPercent": 25,
+      "relatedCategoryIds": [
+        "zakat_charity"
+      ],
+      "reminder": {
+        "ar": "تذكير الزكاة: يُحسب الحول من تاريخ أول ادخار بلغ النصاب، لا من تاريخ ثابت. التطبيق ينبهك عند مرور سنة هجرية.",
+        "fr": "Rappel zakat : le hawl se calcule depuis la date de la première épargne atteignant le nisab, pas d'une date fixe. L'app vous alerte après une année hégirienne."
+      }
+    }
+  ]
+}

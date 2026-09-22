@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "generatedFrom": "lib/data/seed/seed_categories.dart",
+  "note": {
+    "ar": "بذرة التصنيفات — تُزرع في قاعدة البيانات المحلية عند أول تشغيل (المرحلة 2). labels نسخة احتياطية للخادم وللتصدير؛ التطبيق يعرض الترجمة من ملفات .arb عبر labelKey.",
+    "fr": "Bibliothèque de catégories — insérée dans la base locale au premier lancement (Phase 2). labels sert de repli côté serveur et pour l'export ; l'app affiche la traduction des .arb via labelKey."
+  },
+  "brandPolicy": {
+    "ar": "🔴 ممنوع ذكر أي اسم بنك أو مؤسسة أو مشغّل. القيم محايدة تماماً.",
+    "fr": "🔴 Aucun nom de banque, d'institution ou d'opérateur. Valeurs entièrement neutres."
+  },
+  "expense": [
+    {
+      "id": "food",
+      "kind": "expense",
+      "labelKey": "categoryFood",
+      "labels": {
+        "ar": "الطعام والتموين",
+        "fr": "Alimentation et courses"
+      },
+      "icon": "restaurant",
+      "sortOrder": 1,
+      "seasonal": true
+    },
+    {
+      "id": "transport",
+      "kind": "expense",
+      "labelKey": "categoryTransport",
+      "labels": {
+        "ar": "النقل والتنقل",
+        "fr": "Transport et déplacements"
+      },
+      "icon": "directions_bus",
+      "sortOrder": 2
+    },
+    {
+      "id": "housing",
+      "kind": "expense",
+      "labelKey": "categoryHousing",
+      "labels": {
+        "ar": "السكن والإيجار",
+        "fr": "Logement et loyer"
+      },
+      "icon": "home",
+      "sortOrder": 3
+    },
+    {
+      "id": "utilities",
+      "kind": "expense",
+      "labelKey": "categoryUtilities",
+      "labels": {
+        "ar": "الكهرباء والغاز",
+        "fr": "Électricité et gaz"
+      },
+      "icon": "bolt",
+      "sortOrder": 4
+    },
+    {
+      "id": "water",
+      "kind": "expense",
+      "labelKey": "categoryWater",
+      "labels": {
+        "ar": "المياه",
+        "fr": "Eau"
+      },
+      "icon": "water_drop",
+      "sortOrder": 5
+    },
+    {
+      "id": "internet_phone",
+      "kind": "expense",
+      "labelKey": "categoryInternet",
+      "labels": {
+        "ar": "الإنترنت والهاتف",
+        "fr": "Internet et téléphone"
+      },
+      "icon": "wifi",
+      "sortOrder": 6
+    },
+    {
+      "id": "health",
+      "kind": "expense",
+      "labelKey": "categoryHealth",
+      "labels": {
+        "ar": "الصحة والدواء",
+        "fr": "Santé et médicaments"
+      },
+      "icon": "medical_services",
+      "sortOrder": 7
+    },
+    {
+      "id": "education",
+      "kind": "expense",
+      "labelKey": "categoryEducation",
+      "labels": {
+        "ar": "التعليم والمدارس",
+        "fr": "Éducation et école"
+      },
+      "icon": "school",
+      "sortOrder": 8,
+      "seasonal": true
+    },
+    {
+      "id": "clothing",
+      "kind": "expense",
+      "labelKey": "categoryClothing",
+      "labels": {
+        "ar": "الملابس",
+        "fr": "Vêtements"
+      },
+      "icon": "checkroom",
+      "sortOrder": 9,
+      "seasonal": true
+    },
+    {
+      "id": "family_aid",
+      "kind": "expense",
+      "labelKey": "categoryFamilyAid",
+      "labels": {
+        "ar": "مساعدة عائلية",
+        "fr": "Aide familiale"
+      },
+      "icon": "family_restroom",
+      "sortOrder": 10
+    },
+    {
+      "id": "zakat_charity",
+      "kind": "expense",
+      "labelKey": "categoryCharity",
+      "labels": {
+        "ar": "الزكاة والصدقة",
+        "fr": "Zakat et aumônes"
+      },
+      "icon": "volunteer_activism",
+      "sortOrder": 11,
+      "seasonal": true
+    },
+    {
+      "id": "gifts_events",
+      "kind": "expense",
+      "labelKey": "categoryGifts",
+      "labels": {
+        "ar": "الهدايا والمناسبات",
+        "fr": "Cadeaux et occasions"
+      },
+      "icon": "card_giftcard",
+      "sortOrder": 12,
+      "seasonal": true
+    },
+    {
+      "id": "cafe_drinks",
+      "kind": "expense",
+      "labelKey": "categoryCafe",
+      "labels": {
+        "ar": "المقاهي والمشروبات",
+        "fr": "Cafés et boissons"
+      },
+      "icon": "local_cafe",
+      "sortOrder": 13
+    },
+    {
+      "id": "leisure_travel",
+      "kind": "expense",
+      "labelKey": "categoryLeisure",
+      "labels": {
+        "ar": "الترفيه والسفر",
+        "fr": "Loisirs et voyages"
+      },
+      "icon": "flight",
+      "sortOrder": 14,
+      "seasonal": true
+    },
+    {
+      "id": "maintenance",
+      "kind": "expense",
+      "labelKey": "categoryMaintenance",
+      "labels": {
+        "ar": "الصيانة والتصليح",
+        "fr": "Entretien et réparations"
+      },
+      "icon": "handyman",
+      "sortOrder": 15
+    },
+    {
+      "id": "subscriptions",
+      "kind": "expense",
+      "labelKey": "categorySubscriptions",
+      "labels": {
+        "ar": "الاشتراكات",
+        "fr": "Abonnements"
+      },
+      "icon": "subscriptions",
+      "sortOrder": 16
+    },
+    {
+      "id": "debt_repay",
+      "kind": "expense",
+      "labelKey": "categoryDebtRepay",
+      "labels": {
+        "ar": "تسديد دين",
+        "fr": "Remboursement de dette"
+      },
+      "icon": "currency_exchange",
+      "sortOrder": 17
+    },
+    {
+      "id": "other_expense",
+      "kind": "expense",
+      "labelKey": "categoryOtherExpense",
+      "labels": {
+        "ar": "مصروف آخر",
+        "fr": "Autre dépense"
+      },
+      "icon": "more_horiz",
+      "sortOrder": 18
+    }
+  ],
+  "income": [
+    {
+      "id": "salary",
+      "kind": "income",
+      "labelKey": "categorySalary",
+      "labels": {
+        "ar": "راتب شهري",
+        "fr": "Salaire mensuel"
+      },
+      "icon": "payments",
+      "sortOrder": 1
+    },
+    {
+      "id": "daily_wage",
+      "kind": "income",
+      "labelKey": "categoryDailyWage",
+      "labels": {
+        "ar": "أجرة يومية",
+        "fr": "Salaire journalier"
+      },
+      "icon": "construction",
+      "sortOrder": 2
+    },
+    {
+      "id": "freelance",
+      "kind": "income",
+      "labelKey": "categoryFreelance",
+      "labels": {
+        "ar": "عمل حر",
+        "fr": "Travail indépendant"
+      },
+      "icon": "laptop_mac",
+      "sortOrder": 3
+    },
+    {
+      "id": "trade_sales",
+      "kind": "income",
+      "labelKey": "categoryTrade",
+      "labels": {
+        "ar": "تجارة وبيع",
+        "fr": "Commerce et ventes"
+      },
+      "icon": "storefront",
+      "sortOrder": 4
+    },
+    {
+      "id": "bonus_grant",
+      "kind": "income",
+      "labelKey": "categoryBonus",
+      "labels": {
+        "ar": "علاوة أو منحة",
+        "fr": "Prime ou bonus"
+      },
+      "icon": "workspace_premium",
+      "sortOrder": 5
+    },
+    {
+      "id": "pension",
+      "kind": "income",
+      "labelKey": "categoryPension",
+      "labels": {
+        "ar": "معاش أو تقاعد",
+        "fr": "Retraite ou pension"
+      },
+      "icon": "elderly",
+      "sortOrder": 6
+    },
+    {
+      "id": "debt_collect",
+      "kind": "income",
+      "labelKey": "categoryDebtCollect",
+      "labels": {
+        "ar": "استرجاع دين",
+        "fr": "Récupération de créance"
+      },
+      "icon": "handshake",
+      "sortOrder": 7
+    },
+    {
+      "id": "other_income",
+      "kind": "income",
+      "labelKey": "categoryOtherIncome",
+      "labels": {
+        "ar": "دخل آخر",
+        "fr": "Autre revenu"
+      },
+      "icon": "more_horiz",
+      "sortOrder": 8
+    }
+  ]
+}
