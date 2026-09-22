@@ -1,0 +1,86 @@
+# ─── Flutter / Dart ───
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+coverage/
+.metadata
+*.g.dart
+*.freezed.dart
+
+# ─── توليد الترجمات (يُعاد توليدها بالأمر: flutter gen-l10n) ───
+# ⭐ الملفات المولَّدة تُكتب في lib/l10n (بجانب ملفات .arb) لأن
+#   الحزمة الاصطناعية package:flutter_gen أُلغيت في Flutter 3.32+.
+#   ملفات .arb نفسها **لا تُتجاهل** — فهي المصدر الحقيقي للترجمة.
+lib/generated/
+lib/l10n/app_localizations.dart
+lib/l10n/app_localizations_*.dart
+l10n_missing.txt
+
+# ─── 🔴 الأسرار — لا تُرفع أبداً ───
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+google-services.json
+GoogleService-Info.plist
+firebase_options.dart
+service_account.json
+supabase/.temp/
+
+# ─── 🔑 مفاتيح التوقيع (إن ضاعت لا يمكن تحديث التطبيق أبداً) ───
+*.jks
+*.keystore
+key.properties
+android/key.properties
+signing/
+*.pfx
+*.p12
+
+# ─── منصات البناء ───
+android/.gradle/
+android/local.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
+windows/flutter/ephemeral/
+windows/*.user
+windows/x64/
+linux/flutter/ephemeral/
+macos/Flutter/ephemeral/
+
+# ─── IDEs ───
+.idea/
+*.iml
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ─── أنظمة التشغيل ───
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── السجلات والتشخيص ───
+*.log
+*.tmp
+crashlytics-build.properties
+
+# ─── ملفات الموقع (site/) ───
+site/node_modules/
+site/dist/
+site/.astro/
+
+# ─── النسخ المبنية للتوزيع ───
+release/
+dist/
+*.apk
+*.aab
+*.exe
+*.msix
+!site/public/downloads/*.apk
+!site/public/downloads/*.exe

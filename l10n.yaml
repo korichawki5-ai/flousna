@@ -1,0 +1,32 @@
+# ═══════════════════════════════════════════════════════════════
+#  l10n.yaml — إعداد توليد الترجمات
+#
+#  بعد إضافة/تعديل أي مفتاح في ar.arb أو fr.arb نفّذ:
+#      flutter gen-l10n
+#  (يُنفَّذ تلقائياً أيضاً عند flutter run / flutter build
+#   لأن pubspec.yaml يحتوي على `generate: true`)
+#
+#  ⭐ ملاحظة مهمة (Flutter 3.32 وما فوق):
+#     الحزمة الاصطناعية package:flutter_gen **أُلغيت نهائياً**.
+#     لذلك لا نكتب `synthetic-package` إطلاقاً (الكتابة بـ true
+#     تُوقف البناء بخطأ)، ونولّد الملفات داخل شجرة المصدر:
+#         lib/l10n/app_localizations.dart
+#     والاستيراد في كل ملفات التطبيق يكون:
+#         import 'package:falousna/l10n/app_localizations.dart';
+# ═══════════════════════════════════════════════════════════════
+
+arb-dir: lib/l10n
+template-arb-file: ar.arb
+output-localization-file: app_localizations.dart
+output-class: AppLocalizations
+
+# ملفات الترجمة المولَّدة تُكتب هنا (داخل lib/ — حقيقية وقابلة للفحص)
+output-dir: lib/l10n
+
+# العربية هي اللغة الأساسية (قالب الترجمة)
+# الفرنسية تُترجَم عنها
+untranslated-messages-file: l10n_missing.txt
+
+# ⭐ non-nullable: AppLocalizations.of(context) لا تُرجع null أبداً
+#   → يلغي `!` من كل الشاشات ويمنع خطأ وقت التشغيل
+nullable-getter: false

@@ -1,0 +1,131 @@
+name: falousna
+description: "فلوسنا — تطبيق جزائري لإدارة الدخل والمصاريف والميزانية. يعمل بدون إنترنت."
+publish_to: 'none'
+
+# ⚠️ الإصدار يُقرأ أيضاً من version.json في موقع التحميل (للتحديثات خارج Play Store)
+version: 1.0.0+100
+
+environment:
+  # ⭐ مثبَّت حسب الإصدارات الحقيقية المُتحقَّق منها من pub.dev بتاريخ 2026-09-21
+  # go_router 18.0.1 يتطلب: sdk ^3.12.0 و flutter >=3.44.0  ← هذا هو القيد الحاكم
+  sdk: '>=3.12.0 <4.0.0'
+  flutter: '>=3.44.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # ── إدارة الحالة (Riverpod 3 — بلا codegen عمداً لتسهيل التشخيص) ──
+  flutter_riverpod: ^3.4.3
+
+  # ── التنقل (يتضمن حراسات المسارات لحماية الشاشات) ──
+  go_router: ^18.0.1
+
+  # ── التنسيق والترجمة والأرقام والعملات ──
+  # 🔴 `any` عمداً (توصية Flutter الرسمية): intl يأتي مقيداً من
+  #    flutter_localizations التابعة للـ SDK، وقيدها يتغيّر بين إصدارات SDK.
+  #    المُتحقَّق منه من مصدر SDK نفسه (Flutter 3.47.5): `intl: ^0.20.3`.
+  #    أي قيد نكتبه نحن قد يتعارض مع SDK مستقبلي فيفشل `flutter pub get`
+  #    بخطأ تعارض إصدارات. القفل الحقيقي محفوظ في pubspec.lock.
+  intl: any
+
+  # ── التخزين المحلي (الإعدادات وحالة الجلسة) ──
+  shared_preferences: ^2.5.5
+
+  # ── تجزئة SHA-256 لسجل الموافقات القانونية (consent_hash) ──
+  crypto: ^3.0.7
+
+  # ── فتح روابط واتساب وسياسة الخصوصية الخارجية ──
+  url_launcher: ^6.3.2
+
+  # ── نوافذ سطح المكتب (نسخة Windows) ──
+  window_manager: ^0.5.2
+
+  # ── المرحلة 2: قاعدة البيانات المحلية (offline-first) ──
+  # drift = ORM فوق SQLite مع كود مولّد نوعياً؛ drift_flutter يفتح
+  # القاعدة في مجلد التطبيق الصحيح لكل منصة ويضمّن sqlite3 الأصلي.
+  drift: ^2.35.0
+  drift_flutter: ^0.3.1
+  # معرّفات الحركات والملفات: عشوائية وآمنة offline (م3: مزامنة بلا تصادم)
+  uuid: ^4.6.0
+
+# ─────────────────────────────────────────────────────────────
+# 🔴 كل حزمة في «المكتبات النشطة» أعلاه مستعملة فعلاً في كود
+#    المرحلة 1 (تحقق آلي: أي استيراد يجب أن يطابق حزمة معلنة).
+#    الحزم التالية مؤجَّلة لمراحلها — موثّقة بالإصدارات المُتحقَّق
+#    منها من pub.dev بتاريخ 2026-09-21 حتى لا نعيد البحث، ولا
+#    تُثبَّت الآن لأن كل إضافة native تُبطئ البناء وترفع احتمال
+#    فشل أول تشغيل على جهاز المستخدم:
+#
+#   المرحلة 2 (قاعدة البيانات المحلية): ✅ أُعلِنَت الآن في المكتبات النشطة
+#     drift / drift_flutter / uuid / drift_dev / build_runner
+#
+#   المرحلة 3 (الـ Backend والمزامنة):
+#     supabase_flutter: ^2.17.2
+#     flutter_secure_storage: ^11.2.0   (مفاتيح الجلسة — بديل sqlcipher الميت)
+#     device_info_plus: ^13.2.0         (دليل الموافقة + منع إعادة التجربة)
+#     connectivity_plus: ^7.3.1
+#
+#   المرحلة 5 (التقارير والإشعارات والمناسبات):
+#     hijri_date: ^1.1.0        (التقويم الهجري — المناسبات والمقارنة)
+#     fl_chart: ^1.2.0
+#     pdf: ^3.13.1
+#     printing: ^5.15.1
+#     flutter_local_notifications: ^22.3.1
+#     table_calendar: ^3.2.1
+#
+#   المرحلة 6 (التحديثات خارج المتجر):
+#     package_info_plus: ^10.2.1  (الإصدار الحقيقي + رقم البناء)
+#     in_app_update: ^5.0.0
+#
+# ⚠️ مرفوضة عمداً:
+#     syncfusion_*        → ترخيص تجاري مدفوع (قاعدة 7)
+#     sqlcipher_flutter_libs → 0.7.0+eol (نهاية الدعم)
+#     firebase_messaging  → يفشل على أجهزة بلا Google Play Services
+# ─────────────────────────────────────────────────────────────
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # مولّد كود drift (يُنفَّذ عندي قبل التسليم — الملف .g.dart مُسلَّم مع المشروع)
+  build_runner: ^2.16.1
+  drift_dev: ^2.35.0
+
+flutter:
+  uses-material-design: true
+
+  # ── توليد الترجمات من ملفات .arb ──
+  generate: true
+
+  assets:
+    - assets/seed/
+
+  fonts:
+    # Cairo: خط عربي/لاتيني متناسق — أوزان ثابتة حقيقية (Regular/Medium/SemiBold)
+    # 🔴 السبب: ملف Google Fonts الرسمي صار متغيّراً فقط (wght 200→1000)، ومحرّك
+    #    Flutter لا يطبّق محور الوزن تلقائياً من fontWeight فيظهر النص الثقيل
+    #    كالعادي. لذلك ولّدنا أوزاناً ثابتة عبر tool/build_static_fonts.py
+    #    (النتيجة أصغر أيضاً: 492 KB للثلاثة مقابل 599 KB للملف المتغيّر).
+    #    الأوزان = المستعملة فعلاً في lib/ (400 · 500 · 600) لا أكثر.
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo/Cairo-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Cairo/Cairo-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Cairo/Cairo-SemiBold.ttf
+          weight: 600
+    # IBM Plex Mono: للأرقام والمبالغ — قاعدة Laboratory Effect
+    - family: IBMPlexMono
+      fonts:
+        - asset: assets/fonts/IBMPlexMono/IBMPlexMono-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/IBMPlexMono/IBMPlexMono-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/IBMPlexMono/IBMPlexMono-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/IBMPlexMono/IBMPlexMono-Bold.ttf
+          weight: 700

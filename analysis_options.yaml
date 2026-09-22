@@ -1,0 +1,101 @@
+# ═══════════════════════════════════════════════════════════════
+#  قواعد التحليل الصارمة — سياسة Zero-Bugs
+#  أي مخالفة هنا تُفشل البناء في CI
+# ═══════════════════════════════════════════════════════════════
+
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    # الأخطاء التي تُفشل البناء
+    missing_required_param: error
+    missing_return: error
+    invalid_annotation_target: ignore
+    # TODO ممنوعة منعاً باتاً (قاعدة 1: لا كود ناقص)
+    todo: error
+    fixme: error
+    # تجاهل الملفات المولَّدة
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "lib/generated/**"
+    - build/**
+
+linter:
+  rules:
+    # ── الأمان والسلامة ──
+    always_declare_return_types: true
+    avoid_dynamic_calls: true
+    avoid_type_to_string: true
+    cancel_subscriptions: true
+    close_sinks: true
+    comment_references: true
+    literal_only_boolean_expressions: true
+    no_adjacent_strings_in_list: true
+    test_types_in_equals: true
+    throw_in_finally: true
+    unnecessary_statements: true
+    use_build_context_synchronously: true
+
+    # ── جودة الكود ──
+    # ⚠️ مُعطَّلة عمداً: تتعارض مع عرف Flutter (`key` يأتي أولاً في كل
+    #    constructors) ومع قاعدة use_key_in_widget_constructors أدناه.
+    #    تفعيلها يُنتج إنذاراً في كل widget — قرار موثّق لا إهمال.
+    always_put_required_named_parameters_first: false
+    avoid_bool_literals_in_conditional_expressions: true
+    avoid_catches_without_on_clauses: true
+    avoid_catching_errors: true
+    # ⚠️ مُعطَّلة عمداً: نمط المشروع يعتمد `abstract final class` كمساحة
+    #    أسماء للثوابت والأدوات (AppTokens · AppConstants · Validators…).
+    #    هذا النمط يمنع الإنشاء ويجمّع الدوال ذات الصلة — قرار موثّق.
+    avoid_classes_with_only_static_members: false
+    avoid_field_initializers_in_const_classes: true
+    avoid_positional_boolean_parameters: true
+    avoid_returning_null_for_void: true
+    avoid_slow_async_io: true
+    avoid_unnecessary_containers: true
+    avoid_unused_constructor_parameters: true
+    # ⚠️ مُعطَّلة عمداً: `Future<void>` هو النمط القياسي في Flutter
+    #    (main · showDialog · حفظ الإعدادات). القاعدة تفرض إرجاع قيم
+    #    لا معنى لها في واجهة المستخدم.
+    avoid_void_async: false
+    cascade_invocations: true
+    directives_ordering: true
+    eol_at_end_of_file: true
+    join_return_with_assignment: true
+    leading_newlines_in_multiline_strings: true
+    prefer_final_fields: true
+    prefer_final_in_for_each: true
+    # ⏸️ مؤجَّلة (تحتاج تحليل تدفق بيانات لا يمكن التحقق منه هنا):
+    #    prefer_final_locals: true
+    #    use_late_for_private_fields_and_variables: true
+    #    → تُفعَّل في المرحلة 2 حين يشغّل CI أمر `flutter analyze` فعلياً.
+    prefer_null_aware_method_calls: true
+    prefer_single_quotes: true
+    require_trailing_commas: true
+    sized_box_shrink_expand: true
+    sort_child_properties_last: true
+    sort_constructors_first: true
+    sort_unnamed_constructors_first: true
+    unnecessary_await_in_return: true
+    unnecessary_lambdas: true
+    unnecessary_parenthesis: true
+    unnecessary_raw_strings: true
+    use_colored_box: true
+    use_decorated_box: true
+    use_is_even_rather_than_modulo: true
+    use_named_constants: true
+    use_raw_strings: true
+    use_string_buffers: true
+    use_super_parameters: true
+
+    # ── الأداء ──
+    avoid_print: true
+    avoid_web_libraries_in_flutter: true
+    diagnostic_describe_all_properties: false
+    sized_box_for_whitespace: true
+    use_key_in_widget_constructors: true
