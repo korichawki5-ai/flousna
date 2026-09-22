@@ -1,0 +1,529 @@
+{
+  "@@locale": "ar",
+  "appName": "فلوسنا",
+  "@appName": {
+    "description": "اسم التطبيق — لا يُترجم حرفياً بل يبقى الهوية"
+  },
+  "appTagline": "اعرف فين راحت فلوسك",
+  "@appTagline": {
+    "description": "السطر التسويقي الرئيسي"
+  },
+  "actionContinue": "متابعة",
+  "actionSkip": "تخطّي",
+  "actionNext": "التالي",
+  "actionBack": "رجوع",
+  "actionSave": "حفظ",
+  "actionCancel": "إلغاء",
+  "actionDelete": "حذف",
+  "actionEdit": "تعديل",
+  "actionConfirm": "تأكيد",
+  "actionRetry": "إعادة المحاولة",
+  "actionClose": "إغلاق",
+  "actionDone": "تم",
+  "actionAdd": "إضافة",
+  "actionSearch": "بحث",
+  "actionFilter": "تصفية",
+  "actionExport": "تصدير",
+  "actionShare": "مشاركة",
+  "actionSeeAll": "عرض الكل",
+  "actionLearnMore": "اعرف المزيد",
+  "actionTryAgain": "حاول مرة أخرى",
+  "actionStartNow": "ابدأ الآن",
+  "actionGetStarted": "لنبدأ",
+  "navHome": "الرئيسية",
+  "@navHome": {
+    "description": "Bottom Navigation — العنصر 1"
+  },
+  "navTransactions": "الحركات",
+  "navAdd": "إضافة",
+  "navBudget": "الميزانية",
+  "navMore": "المزيد",
+  "onboardingSkip": "تخطّي",
+  "onboardingNext": "التالي",
+  "onboardingStart": "لنبدأ",
+  "onboardingPageOf": "{current} من {total}",
+  "@onboardingPageOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "onb1Title": "اعرف فين راحت فلوسك",
+  "onb1Body": "سجّل دخلك ومصروفك في ثوانٍ، وشوف بوضوح وين تمشي فلوسك كل شهر.",
+  "onb2Title": "ميزانية تناسب دخلك",
+  "onb2Body": "دخل يومي أو متغيّر أو شهري؟ اختر دورة ميزانيتك بنفسك: أسبوعية أو شهرية أو الاثنتين معاً.",
+  "onb3Title": "بياناتك في جهازك",
+  "onb3Body": "لا تُرسل بياناتك إلى أي خادم إلا إذا طلبت أنت ذلك بنفسك. التطبيق يعمل كاملاً بدون إنترنت.",
+  "consentTitle": "خصوصيتك أولاً",
+  "consentIntro": "قبل أن تبدأ، اقرأ هذا جيداً. لن نجمع أي حرف عنك قبل موافقتك.",
+  "consentPoint1Title": "بياناتك تبقى في جهازك",
+  "consentPoint1Body": "كل حركاتك المالية تُحفظ في هاتفك أو حاسوبك. لا تغادره إلا إذا فعّلت المزامنة بنفسك.",
+  "consentPoint2Title": "لا نبيع بياناتك — أبداً",
+  "consentPoint2Body": "لا إعلانات، ولا متتبعات، ولا مشاركة مع أي جهة تجارية.",
+  "consentPoint3Title": "أنت المتحكم بالكامل",
+  "consentPoint3Body": "يمكنك تصدير كل بياناتك أو حذفها نهائياً في أي لحظة، من داخل التطبيق.",
+  "consentCheckboxLabel": "قرأت وأوافق على سياسة الخصوصية وشروط الاستخدام",
+  "consentAccept": "أوافق وأكمل",
+  "consentDecline": "أرفض وأخرج",
+  "consentReadPrivacy": "قراءة سياسة الخصوصية",
+  "consentReadTerms": "قراءة شروط الاستخدام",
+  "consentMustAccept": "يجب الموافقة على السياسة والشروط للمتابعة",
+  "consentDeclineTitle": "هل أنت متأكد؟",
+  "consentDeclineBody": "بدون موافقتك لا يمكننا تشغيل التطبيق، لأن القانون يمنعنا من معالجة أي بيانات دون إذنك. لن يُجمع أي شيء.",
+  "consentDeclineConfirm": "نعم، أغلق التطبيق",
+  "consentDeclineCancel": "لا، سأقرأ وأوافق",
+  "consentVersionLabel": "الإصدار {version}",
+  "@consentVersionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "consentRecordedNote": "تم تسجيل موافقتك بتاريخ ووقت محدّد، ويمكنك الاطلاع عليها في: الإعدادات ← القانوني والخصوصية ← سجل موافقاتي.",
+  "authChooseTitle": "كيف تريد أن تبدأ؟",
+  "authChooseSubtitle": "يمكنك استخدام التطبيق كاملاً بدون حساب. الحساب اختياري — وهو فقط لحفظ بياناتك في السحابة واستعمالها على أكثر من جهاز.",
+  "authTryWithoutAccount": "جرّب بدون حساب",
+  "@authTryWithoutAccount": {
+    "description": "الخيار الأساسي — يقلل الاحتكاك"
+  },
+  "authCreateAccount": "إنشاء حساب",
+  "authLogin": "تسجيل الدخول",
+  "authLoginWithGoogle": "المتابعة بحساب Google",
+  "authForgotPassword": "نسيت كلمة المرور؟",
+  "authNoAccountYet": "ليس لديك حساب؟",
+  "authHaveAccount": "لديك حساب بالفعل؟",
+  "authEmailLabel": "البريد الإلكتروني",
+  "authEmailHint": "example@mail.com",
+  "authPasswordLabel": "كلمة المرور",
+  "authPasswordHint": "٨ محارف على الأقل",
+  "authConfirmPasswordLabel": "تأكيد كلمة المرور",
+  "authDisplayNameLabel": "اسم العرض (اختياري)",
+  "authDisplayNameHint": "كيف تحب أن نناديك؟",
+  "authResetPasswordTitle": "استرجاع كلمة المرور",
+  "authResetPasswordBody": "أدخل بريدك وسنرسل لك رابطاً لإعادة التعيين.",
+  "authResetPasswordSend": "أرسل الرابط",
+  "authGuestBadge": "وضع بدون حساب",
+  "authGuestLimitNote": "أنت تستخدم التطبيق محلياً. بياناتك محفوظة في هذا الجهاز فقط — لا نسخ احتياطي ولا مزامنة.",
+  "authUpgradeToAccount": "أنشئ حساباً لحفظ بياناتك",
+  "authComingSoonPhase3": "إنشاء الحساب متاح بعد إعداد الخادم (المرحلة 3)",
+  "setupTitle": "إعداد سريع",
+  "setupSubtitle": "ثلاث خطوات فقط — وكلها اختيارية. يمكنك تغييرها لاحقاً من الإعدادات.",
+  "setupStepLanguage": "اللغة",
+  "setupStepIncome": "نوع دخلك",
+  "setupStepCategories": "الفئات",
+  "setupLanguageArabic": "العربية",
+  "setupLanguageFrench": "Français",
+  "setupIncomeDaily": "دخل يومي",
+  "setupIncomeDailyHint": "أشتغل بالأجرة اليومية أو بالمهمة",
+  "setupIncomeVariable": "دخل متغيّر",
+  "setupIncomeVariableHint": "فريلانس أو تجارة أو عمل حر",
+  "setupIncomeFixed": "دخل شهري ثابت",
+  "setupIncomeFixedHint": "راتب في نهاية الشهر أو في يوم محدد",
+  "setupIncomeDailyResult": "سنضبط ميزانيتك أسبوعياً — لأنسب طريقة للدخل اليومي.",
+  "setupIncomeVariableResult": "سنضبط ميزانيتك أسبوعياً مع نظرة شهرية مجمّعة.",
+  "setupIncomeFixedResult": "سنضبط ميزانيتك شهرياً. يمكنك تحديد يوم بداية شهرك المالي.",
+  "setupCategoriesTitle": "اختر الفئات التي تستعملها",
+  "setupCategoriesHint": "سنرتّب لك الشاشة حسب اختيارك. يمكنك إضافة فئات مخصصة لاحقاً.",
+  "setupFinish": "ابدأ استخدام فلوسنا",
+  "setupSkipAll": "تخطّي الكل والبدء",
+  "setupStepOf": "الخطوة {current} من {total}",
+  "@setupStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "homeGreeting": "أهلاً بك 👋",
+  "homeEmptyTitle": "لا توجد حركات بعد",
+  "homeEmptyBody": "أضف أول مصروف أو دخل، وابدأ برؤية أين تذهب أموالك.",
+  "homeEmptyAction": "أضف أول حركة",
+  "homeBalance": "الرصيد الحالي",
+  "homeIncome": "الدخل",
+  "homeExpenses": "المصاريف",
+  "homeThisPeriod": "هذه الفترة",
+  "homeRecentTransactions": "آخر الحركات",
+  "homeTrialBanner": "بقي {days} من التجربة المجانية",
+  "@homeTrialBanner": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "homeOfflineBanner": "غير متصل — {count} حركة بانتظار المزامنة",
+  "@homeOfflineBanner": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "placeholderTitle": "هذه الشاشة قيد البناء",
+  "placeholderBody": "ستُبنى هذه الشاشة في المرحلة {phase}. التطبيق الآن في مرحلة الأساس: التصميم والترجمة والتنقل والموافقات.",
+  "@placeholderBody": {
+    "placeholders": {
+      "phase": {
+        "type": "String"
+      }
+    }
+  },
+  "placeholderPhaseLabel": "المرحلة {phase}",
+  "@placeholderPhaseLabel": {
+    "placeholders": {
+      "phase": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsTitle": "الإعدادات",
+  "settingsSectionAppearance": "المظهر واللغة",
+  "settingsSectionMoney": "الأموال والفترات",
+  "settingsSectionData": "البيانات والمزامنة",
+  "settingsSectionNotifications": "التنبيهات",
+  "settingsSectionLegal": "القانوني والخصوصية",
+  "settingsSectionAbout": "حول التطبيق",
+  "settingsTheme": "المظهر",
+  "settingsThemeLight": "فاتح",
+  "settingsThemeDark": "داكن",
+  "settingsThemeSystem": "تلقائي (حسب الجهاز)",
+  "settingsLanguage": "اللغة",
+  "settingsLanguageSystem": "لغة الجهاز",
+  "settingsCurrency": "العملة الأساسية",
+  "settingsExchangeRates": "أسعار الصرف",
+  "settingsFiscalAnchor": "يوم بداية الشهر المالي",
+  "settingsBudgetMode": "دورة الميزانية",
+  "settingsBudgetModeMonthly": "شهرية",
+  "settingsBudgetModeWeekly": "أسبوعية",
+  "settingsBudgetModeBoth": "الاثنتان معاً",
+  "settingsSync": "المزامنة السحابية",
+  "settingsSyncOff": "معطّلة — بياناتك في جهازك فقط",
+  "settingsSyncOn": "مفعّلة",
+  "settingsSyncRequiresConsent": "تتطلب موافقة صريحة منفصلة (نقل البيانات خارج الوطن)",
+  "settingsBackup": "نسخة احتياطية محلية",
+  "settingsNotificationsDaily": "تذكير يومي بالتسجيل",
+  "settingsNotificationsBudget": "تنبيهات تجاوز الميزانية",
+  "settingsNotificationsDebts": "تنبيه آجال الديون",
+  "legalTitle": "القانوني والخصوصية",
+  "legalPrivacy": "سياسة الخصوصية",
+  "legalTerms": "شروط الاستخدام",
+  "legalSubscription": "شروط الاشتراك والاسترداد",
+  "legalDisclaimer": "إخلاء المسؤولية",
+  "legalExportData": "تصدير كل بياناتي",
+  "legalExportDataNote": "حق الاطلاع وحق النقل — نصدر لك ملفاً بكل ما نملكه عنك.",
+  "legalRectifyData": "طلب تصحيح بياناتي",
+  "legalObjectData": "الاعتراض على المعالجة",
+  "legalDeleteAccount": "حذف حسابي وبياناتي نهائياً",
+  "legalDeleteAccountNote": "حق المحو — لا يمكن التراجع بعد التنفيذ.",
+  "legalDpoContact": "بريد مندوب حماية المعطيات",
+  "legalComplaintAnpdp": "تقديم شكوى لدى السلطة الوطنية (ANPDP)",
+  "legalMyConsents": "سجل موافقاتي",
+  "legalComingSoon": "سيُفعَّل هذا الحق في المرحلة 4",
+  "aboutVersion": "الإصدار",
+  "aboutBuild": "رقم البناء",
+  "aboutLicenses": "التراخيص مفتوحة المصدر",
+  "aboutCheckUpdate": "التحقق من التحديثات",
+  "aboutRateApp": "قيّم التطبيق",
+  "errorGenericTitle": "حدث خطأ",
+  "errorGenericBody": "لم نتمكن من إتمام العملية. بياناتك محفوظة ولم يُفقد شيء.",
+  "errorNetworkTitle": "لا يوجد اتصال",
+  "errorNetworkBody": "تحقق من اتصالك بالإنترنت ثم أعد المحاولة. يمكنك الاستمرار في استخدام التطبيق بدون إنترنت.",
+  "errorUnknownTitle": "خطأ غير متوقع",
+  "errorUnknownBody": "حدث أمر لم نتوقعه. أعد المحاولة، وإن تكرر فأخبرنا عبر الدعم.",
+  "errorValidationTitle": "تحقق من المدخلات",
+  "errorPermissionTitle": "لا تملك صلاحية",
+  "errorPermissionBody": "هذه الشاشة مخصّصة لدور معيّن. تواصل مع الدعم إن كنت تعتقد أن هذا خطأ.",
+  "errorFeatureLockedTitle": "هذه الميزة مقفلة",
+  "errorFeatureLockedBody": "انتهت فترة التجربة المجانية. اختر باقتك لتكمل — بياناتك محفوظة ويمكنك عرضها وتصديرها دائماً.",
+  "errorContactSupport": "تواصل مع الدعم",
+  "validateEmailRequired": "البريد الإلكتروني مطلوب",
+  "validateEmailInvalid": "صيغة البريد غير صحيحة. مثال: name@mail.com",
+  "validateEmailTooLong": "البريد طويل جداً (الحد 254 محرفاً)",
+  "validatePasswordRequired": "كلمة المرور مطلوبة",
+  "validatePasswordTooShort": "كلمة المرور قصيرة — ٨ محارف على الأقل",
+  "validatePasswordNoDigit": "أضف رقماً واحداً على الأقل لكلمة المرور",
+  "validatePasswordTooLong": "كلمة المرور طويلة جداً (الحد 128 محرفاً)",
+  "validateConfirmMismatch": "كلمتا المرور غير متطابقتين",
+  "validateNameTooLong": "الاسم طويل جداً (الحد 40 محرفاً)",
+  "validateAmountRequired": "أدخل المبلغ",
+  "validateAmountZero": "المبلغ يجب أن يكون أكبر من صفر",
+  "validateAmountTooLarge": "المبلغ كبير جداً (الحد 999,999,999.99)",
+  "validateAmountDecimals": "خانتان عشريتان كحد أقصى",
+  "validatePhoneAlgerian": "رقم جزائري غير صالح. يجب أن يبدأ بـ 05 أو 06 أو 07 (مثال: 0555123456)",
+  "validateNoteTooLong": "الملاحظة طويلة جداً (الحد 500 محرف)",
+  "stateLoading": "جارٍ التحميل…",
+  "stateSaving": "جارٍ الحفظ…",
+  "stateEmpty": "لا يوجد شيء هنا بعد",
+  "stateOffline": "أنت غير متصل — التطبيق يعمل بشكل طبيعي",
+  "stateSyncing": "جارٍ المزامنة…",
+  "stateSyncDone": "تمت المزامنة بنجاح",
+  "stateNoInternet": "لا يوجد إنترنت",
+  "confirmDeleteTitle": "تأكيد الحذف",
+  "confirmDeleteBody": "سيُحذف هذا العنصر نهائياً. لا يمكن التراجع.",
+  "confirmExitTitle": "الخروج من التطبيق",
+  "confirmExitBody": "هل تريد إغلاق فلوسنا؟",
+  "countdownNote": "يتفعّل الزر بعد {seconds} ثانية — للتأكد من قصدك.",
+  "@countdownNote": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldShowPassword": "إظهار كلمة المرور",
+  "fieldHidePassword": "إخفاء كلمة المرور",
+  "validateRequired": "هذا الحقل مطلوب",
+  "validateTooLong": "النص طويل جداً (الحد {max} محرفاً)",
+  "@validateTooLong": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "incomeKind": "دخل",
+  "expenseKind": "مصروف",
+  "categoryFood": "الطعام والتموين",
+  "categoryTransport": "النقل والتنقل",
+  "categoryHousing": "السكن والإيجار",
+  "categoryUtilities": "الكهرباء والغاز",
+  "categoryWater": "المياه",
+  "categoryInternet": "الإنترنت والهاتف",
+  "categoryHealth": "الصحة والدواء",
+  "categoryEducation": "التعليم والمدارس",
+  "categoryClothing": "الملابس",
+  "categoryCharity": "الزكاة والصدقة",
+  "categoryCafe": "المقاهي والمشروبات",
+  "categoryGifts": "الهدايا والمناسبات",
+  "categoryMaintenance": "الصيانة والتصليح",
+  "categorySubscriptions": "الاشتراكات",
+  "categoryDebtRepay": "تسديد دين",
+  "categoryDebtCollect": "استرجاع دين",
+  "categoryLeisure": "الترفيه والسفر",
+  "categorySalary": "راتب شهري",
+  "categoryDailyWage": "أجرة يومية",
+  "categoryBonus": "علاوة أو منحة",
+  "categoryFreelance": "عمل حر",
+  "categoryTrade": "تجارة وبيع",
+  "categoryPension": "معاش أو تقاعد",
+  "categoryFamilyAid": "مساعدة عائلية",
+  "categoryOtherIncome": "دخل آخر",
+  "categoryOtherExpense": "مصروف آخر",
+  "txEmptyTitle": "لا حركات في هذه الفترة",
+  "txEmptyBody": "سجّل أول حركة من زر الإضافة في الأسفل، وستظهر هنا مباشرة.",
+  "txSearchHint": "ابحث في الحركات…",
+  "txFilterAll": "الكل",
+  "txSortLabel": "الأحدث أولاً",
+  "txTotalIncome": "مجموع الدخل",
+  "txTotalExpense": "مجموع المصاريف",
+  "budgetEmptyTitle": "لم تُضبط ميزانية بعد",
+  "budgetEmptyBody": "حدّد سقفاً لمصاريفك، وسننبهك قبل أن تتجاوزه — لا بعد فوات الأوان.",
+  "budgetEmptyAction": "اضبط ميزانيتي",
+  "budgetSpent": "المصروف",
+  "budgetRemaining": "المتبقي",
+  "budgetLimitLabel": "سقف الميزانية",
+  "budgetWeeklySection": "الميزانية الأسبوعية",
+  "budgetMonthlySection": "الميزانية الشهرية",
+  "addTitle": "حركة جديدة",
+  "addKindLabel": "نوع الحركة",
+  "addAmountLabel": "المبلغ",
+  "addAmountHint": "مثال: 1500",
+  "addCategoryLabel": "التصنيف",
+  "addNoteLabel": "ملاحظة (اختياري)",
+  "addNoteHint": "مثال: خضرة السوق",
+  "addDateLabel": "التاريخ",
+  "addPhase2Title": "الحفظ الفعلي يبدأ في المرحلة 2",
+  "addPhase2Body": "هذه الشاشة مكتملة: الحقول والتحقق والتصنيفات تعمل. حفظ الحركات في قاعدة بيانات الجهاز يأتي في المرحلة 2. لن يُحفظ شيء الآن، حتى لا تظن أن بياناتك محفوظة وهي ليست كذلك.",
+  "addFormValid": "الحقول صحيحة — جاهزة للحفظ",
+  "moreSectionTools": "أدوات",
+  "moreSectionInfo": "معلومات",
+  "moreSectionAccount": "الحساب",
+  "moreGoals": "أهداف الادخار",
+  "moreDebts": "الديون (عليك ولك)",
+  "moreRecurring": "الحركات المتكررة",
+  "moreReports": "التقارير والتصدير",
+  "moreSubscription": "الاشتراك والباقة",
+  "settingsBudgetModeHint": "تُضبط الدورة حسب نوع دخلك: يومي ← أسبوعية، راتب ← شهرية.",
+  "settingsFiscalAnchorHint": "اليوم الذي يبدأ فيه شهرك المالي (من 1 إلى 28). مفيد إن كان راتبك ينزل يوم 25 مثلاً.",
+  "settingsCurrencyHint": "العملة التي تُجمع بها كل التقارير. العملات الأخرى تُسجَّل بسعر صرف يدوي.",
+  "settingsEraseAll": "حذف كل البيانات من هذا الجهاز",
+  "settingsEraseAllNote": "يمسح الموافقات والإعدادات وكل ما خُزن محلياً. لا يمكن التراجع.",
+  "settingsEraseConfirmTitle": "حذف كل البيانات؟",
+  "settingsEraseConfirmBody": "سيُمسح كل شيء من هذا الجهاز نهائياً، وستعود إلى شاشة الترحيب وكأن التطبيق جديد.",
+  "settingsErased": "حُذفت كل البيانات",
+  "settingsNotificationsNote": "التنبيهات تعمل محلياً بلا إنترنت، وتُفعَّل في المرحلة 5.",
+  "settingsSyncNote": "المزامنة اختيارية وتبدأ في المرحلة 3، وتتطلب موافقة صريحة منفصلة.",
+  "settingsSaved": "حُفظ الإعداد",
+  "legalConsentRecorded": "الموافقة المسجَّلة",
+  "legalConsentVersion": "إصدار السياسة",
+  "legalConsentHash": "بصمة الموافقة (SHA-256)",
+  "legalConsentDate": "تاريخ الموافقة",
+  "legalNoConsentYet": "لا توجد موافقة مسجَّلة بعد",
+  "legalRightsTitle": "حقوقك الخمسة",
+  "legalRightsBody": "الاطلاع · التصحيح · الاعتراض · الحذف · النقل. تمارسها من داخل التطبيق أو بمراسلة مندوب حماية المعطيات، ونرد خلال 72 ساعة كحد أقصى.",
+  "legalCantOpenLink": "تعذّر فتح الرابط. انسخه وافتحه في المتصفح.",
+  "legalCopied": "نُسخ إلى الحافظة",
+  "legalCopyAction": "نسخ",
+  "legalDataOnDevice": "بياناتك الآن على هذا الجهاز فقط",
+  "aboutTitle": "حول التطبيق",
+  "aboutAppDescription": "فلوسنا أداة تسجيل يدوي للدخل والمصاريف والميزانية. لا تربط بأي حساب بنكي أو بريدي، ولا تنفّذ أي دفع أو تحويل.",
+  "aboutNoBrandsNote": "لا يذكُر التطبيق أسماء أي بنوك أو مؤسسات، ولا يطلب أرقام حسابات أو بطاقات.",
+  "aboutPhaseLabel": "المرحلة الحالية: الأساس (1 من 6)",
+  "aboutDataLocalNote": "كل ما تسجّله يبقى في جهازك",
+  "dayCountLabel": "{count, plural, =1{يوم واحد} =2{يومان} few{{count} أيام} many{{count} يوماً} other{{count} يوم}}",
+  "@dayCountLabel": {
+    "description": "عدد الأيام — صيغة الجمع تُدار آلياً حسب اللغة (ICU plural)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "legalDisclaimerBody": "فلوسنا أداة متابعة يدوية. التطبيق:\n• ليس مؤسسة دفع ولا يملك أي ترخيص بنكي؛\n• لا ينفّذ أي دفع أو تحويل أو سحب؛\n• لا يتصل بأي حساب بنكي أو بريدي أو محفظة دفع؛\n• لا يقدّم أي نصيحة استثمارية أو ضريبية أو قانونية؛\n• يعرض مبالغ أدخلها المستخدم بنفسه، دون تحقق من أي جهة خارجية.\n\nالأرقام المعروضة تعكس ما أدخلته أنت فقط. تبقى مسؤولاً عن إدارة أموالك وعن تصريحاتك الجبائية.",
+  "@legalDisclaimerBody": {
+    "description": "إخلاء المسؤولية — طبيعة الأداة (حماية قانونية: ليست خدمة دفع)"
+  },
+  "legalSubscriptionBody": "التجربة المجانية: سبعة أيام بكل الميزات، بلا أي دفع.\n\nبعد التجربة يلزم اشتراك لمواصلة تسجيل البيانات. أما الاطلاع والتقارير والتصدير وحذف بياناتك فتبقى مجانية ومتاحة في كل وقت (قفل مرن لا يحبس بياناتك).\n\nالباقات: الفرد · زوجان · العائلة، بأسعار شهرية وسنوية تُعرض في شاشة الاشتراك وقد تُعدَّل دون تحديث التطبيق.\n\nطريقة التفعيل: تختار الباقة داخل التطبيق، فيُرسل طلب إلى الفريق، ثم يصلك رمز تفعيل بعد الدفع. تفاصيل الدفع تُبلَّغ داخل المحادثة، ولا توضع أبداً داخل التطبيق.\n\nالاسترداد: الرمز غير المفعَّل قابل للاسترداد. الرمز المفعَّل غير قابل له، إلا عند تقصير من طرفنا.",
+  "@legalSubscriptionBody": {
+    "description": "شروط الاشتراك والاسترداد — بلا أسماء وسائل دفع ولا أرقام حسابات"
+  },
+  "categorySeasonalBadge": "تصنيف موسمي — يرتفع استعماله في مواسم معيّنة",
+  "@categorySeasonalBadge": {
+    "description": "وصف لقارئ الشاشة لشارة الموسم"
+  },
+  "creditDeveloper": "تطوير: Shawqi Builds",
+  "socialSectionTitle": "تابعنا",
+  "socialHint": "قنواتنا الرسمية: جديد التطبيق، نصائح عملية، وإعلانات.",
+  "channelFacebook": "فيسبوك",
+  "channelInstagram": "إنستغرام",
+  "channelTiktok": "تيك توك",
+  "channelX": "إكس",
+  "channelYoutube": "يوتيوب",
+  "channelTelegram": "تيليغرام",
+  "channelWhatsapp": "واتساب",
+  "catMgrTitle": "إدارة الفئات",
+  "catMgrAdd": "أضف فئة",
+  "catMgrNameAr": "الاسم بالعربية",
+  "catMgrNameFr": "الاسم بالفرنسية",
+  "catMgrIconLabel": "الأيقونة",
+  "catMgrSeasonal": "فئة موسمية (رمضان، دخول مدرسي…)",
+  "catMgrEmpty": "لا فئات مخصصة بعد",
+  "catMgrEmptyBody": "أضف فئتك الأولى لتناسب طريقة صرفك أنت",
+  "catMgrSaved": "حُفظت الفئة ✅",
+  "catMgrArchived": "مؤرشفة",
+  "catMgrArchive": "أرشفة",
+  "catMgrRestore": "استعادة",
+  "catMgrDuplicate": "يوجد فئة بنفس الاسم بالفعل",
+  "txSavedSnack": "سُجّلت الحركة ✅",
+  "txNoResults": "لا نتائج مطابقة لبحثك",
+  "settingsCatMgr": "إدارة الفئات المخصصة",
+  "settingsCatMgrNote": "أضف أو عدّل أو أرشف فئات مخصصة",
+  "budgetOverallLabel": "كل المصاريف (سقف عام)",
+  "budgetOverallShort": "السقف العام",
+  "budgetAddLimit": "إضافة سقف",
+  "budgetEditLimit": "تعديل السقف",
+  "budgetNewLimit": "سقف جديد",
+  "budgetPickCategory": "الفئة",
+  "budgetAmountLabel": "مبلغ السقف",
+  "budgetAmountHint": "مثال: 20000",
+  "budgetAlertPercentLabel": "نبّهني عند",
+  "budgetAlertRange": "نسبة التنبيه بين 50٪ و100٪",
+  "budgetAlertPercentValue": "{percent}٪ من السقف",
+  "budgetStatusSafe": "داخل السقف",
+  "budgetStatusNear": "قريب من السقف",
+  "budgetStatusOver": "تجاوزت السقف",
+  "budgetUsedPercent": "{percent}٪",
+  "budgetSpentOfLimit": "المصروف من السقف",
+  "budgetRemainingLabel": "الباقي لك",
+  "budgetOverByLabel": "تجاوزت بـ",
+  "budgetExhausted": "استهلكت السقف كاملاً — لا مساحة متبقية",
+  "budgetFormulaNote": "الحساب: النسبة = المصروف ÷ السقف × 100. الحالة: آمن إن كانت أقل من نسبة التنبيه، قريب إن بلغتها، متجاوز إن تجاوزت 100٪.",
+  "budgetSavedSnack": "تم حفظ السقف",
+  "budgetDeletedSnack": "تم حذف السقف",
+  "budgetDeleteTitle": "حذف هذا السقف؟",
+  "budgetDeleteBody": "يُحذف السقف فقط — حركاتك المالية تبقى كما هي بلا أي تغيير.",
+  "budgetDeleteAction": "احذف السقف",
+  "budgetNotFound": "هذا السقف لم يعد موجوداً",
+  "budgetPeriodNote": "السقوف تُحسب على الفترة الحالية المعروضة أعلاه.",
+  "budgetAlertsSection": "تنبيهات السقوف",
+  "budgetAlertOverTitle": "تجاوزت سقف «{category}»",
+  "budgetAlertNearTitle": "اقتربت من سقف «{category}»",
+  "budgetAlertOverBody": "صرفتَ {spent} من أصل {limit}",
+  "budgetAlertNearBody": "صرفتَ {spent} من أصل {limit} — بقي {remaining}",
+  "budgetAlertMore": "{count, plural, =0{لا تنبيهات أخرى} =1{وتنبيه آخر} =2{وتنبيهان آخران} few{و{count} تنبيهات أخرى} many{و{count} تنبيهاً آخر} other{و{count} تنبيه آخر}}",
+  "budgetAlertAction": "راجع السقوف",
+  "budgetCategoryMissing": "فئة غير معروفة",
+  "@budgetAlertPercentValue": {
+    "description": "نسبة التنبيه من السقف",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "@budgetUsedPercent": {
+    "description": "النسبة المئوية المستهلكة",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "@budgetAlertOverTitle": {
+    "description": "عنوان تنبيه التجاوز — اسم الفئة",
+    "placeholders": {
+      "category": {
+        "type": "String"
+      }
+    }
+  },
+  "@budgetAlertNearTitle": {
+    "description": "عنوان تنبيه الاقتراب — اسم الفئة",
+    "placeholders": {
+      "category": {
+        "type": "String"
+      }
+    }
+  },
+  "@budgetAlertOverBody": {
+    "description": "تفصيل التجاوز — مبالغ مُنسَّقة",
+    "placeholders": {
+      "spent": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "String"
+      }
+    }
+  },
+  "@budgetAlertNearBody": {
+    "description": "تفصيل الاقتراب — مبالغ مُنسَّقة",
+    "placeholders": {
+      "spent": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "String"
+      },
+      "remaining": {
+        "type": "String"
+      }
+    }
+  },
+  "@budgetAlertMore": {
+    "description": "عدد التنبيهات الإضافية — صيغة الجمع تُدار آلياً (ICU plural)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
